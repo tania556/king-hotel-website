@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+    </head>
+    <style>
+        body{
+            background-color: rgb(224, 233, 203);
+            color: #5A3E36;
+            text-align: center;
+            h1{
+            color: #C76B98;
+            }
+
+         h2{
+            color: #8B5E83;
+            }
+
+        }
+        .gallery{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 20px;
+}
+        @media (max-width:768px){
+            .gallery{
+                grid-template-columns: 1fr;
+            }
+        }
+        .navbar a:hover{
+            cursor: pointer;
+
+        }
+.navbar a{
+    color:#6D4C5B;
+    text-decoration:none;
+    font-size:20px;
+    margin:0 20px;
+    font-weight:bold;
+}
+
+.navbar{
+    text-align:center;
+    border-bottom:2px solid #F4C7D9;
+    padding-bottom:15px;
+    margin-bottom:30px;
+} 
+.navbar a:hover{
+    color:#B85C8A;
+}  
+
+    </style>
+    <body>
+        <h1>Gallery Of King Hotel</h1>
+        <h2>Welcome to King Hotel's Gallery</h2>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="bookingform.html">Booking</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+</div>
+<div class="gallery">
+
+        <img src="hotel pool.jpg" alt="pool" width="350" height="200">
+        <img src="hotel room.avif" alt="room" width="350" height="200">
+        <img src="small bed room.webp" alt="bedroom" width="350" height="200" >
+        <img src="dining room.jpg" alt="dining room" width="350" height="200">
+        <img src="double bed room.jpg" alt="double bed" width="350" height="200">
+        <img src="inside pool.jpg" alt="inside pool" width="350" height="200">
+</div>
+        
+    </body>
+</html>

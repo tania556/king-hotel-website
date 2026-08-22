@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>King Hotel Booking</title>
+
+    <style>
+        body{
+                background-color: beige;
+                font-family: 'Times New Roman', serif;
+            }
+            h1{
+                color:darkred;
+                text-align: center;
+            }
+            h2{
+               color:navy;
+               text-align: center;
+            }
+ .rooms{
+    display:flex;
+    justify-content: center;
+    gap:40px;
+    align-items: flex-start;
+ } 
+ .room{
+    width: 250px;
+    text-align: center;
+    border: 2px solid pink;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px gray;
+    transition: 0.3s;
+ }
+ .room:hover{
+   transform: scale(1.1);
+   transform: translateY(-10px);
+   box-shadow: 10px 10px 25px gray;
+ }
+
+ .room img{
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.3s;
+ } 
+ .room img:hover{
+   transform: scale(1.05);
+ }
+ .button{
+    background-color: #C76B98;
+    color:white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display:inline-block;
+    font-weight: bold;
+    transition: 0.3s;
+
+ } 
+ .button:hover{
+   background-color: #B85C8A;;
+   transform: scale(1.05);
+   cursor: pointer;
+   box-shadow:0 8px 20px rgba(199,107,152,0.4);
+
+ }
+ .navbar a:hover{
+   cursor: pointer
+ }
+
+.navbar a{
+    color:#C76B98;
+    text-decoration:none;
+    font-size:20px;
+    margin:0 20px;
+    font-weight:bold;
+}
+
+.navbar{
+    text-align:center;
+    border-bottom:2px solid #F4C7D9;
+    padding-bottom:15px;
+    margin-bottom:30px;
+} 
+.navbar a:hover{
+    color:#B85C8A;
+}  
+        
+</style>
+</head>
+<body>
+
+<h1>King Hotel Booking</h1>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="bookingform.html">Booking</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+</div>
+
+<h2>Welcome to our booking page</h2>
+<div class="rooms">
+  <div class="room">
+    <img src="bedroom.jpg" width="250" height="180">
+
+    <h3>Deluxe Room</h3>
+
+    <p>💰 Price: $120/night</p>
+    <p>✔ Free WiFi</p>
+    <p>✔ Breakfast Included</p>
+    <p>✔ Ocean View</p>
+
+    <a href="bookingform.html"class="button">Book Now</a>
+   </div>
+  <div class="room">
+
+    <img src="room2.jpg" width="250" height="180">
+
+    <h3>Royal Suite</h3>
+
+    <p>💰 Price: $250/night</p>
+    <p>✔ King Size Bed</p>
+    <p>✔ Private Balcony</p>
+    <p>✔ Spa Access</p>
+
+    <a href="bookingform.html"
+     class="button">Book Now</a>
+
+   </div>
+</div>
+<a href="index.html" class="button">⬅ Back to Home</a>
+
+</body>
+</html>

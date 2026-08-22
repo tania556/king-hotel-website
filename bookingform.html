@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>The King Hotel Booking Form</title>
+            <style>
+            form{
+                width: 400px;
+                margin:auto;
+            }
+            h1{
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+            }
+            input, select{
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+                border-radius: 8px;
+                border: 1px solid #acc;
+                box-sizing: border-box;
+
+            }
+            input[type="submit"]{
+                background-color: #C76B98;
+                color: white;
+                border: none;
+                cursor:pointer;
+                font-size:18px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+            input[type="submit"]:hover{
+    background-color:#B85C8A;
+    transform:scale(1.05);
+}
+input:focus,
+select:focus{
+    border: 2px solid #C76B98;
+    outline: none;
+}
+body{
+    background-color:#FFF0F5;
+}
+.button{
+    background-color: #C76B98;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.button:hover{
+    background-color: #B85C8A;
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(199, 107, 152, 0.4);
+
+
+}
+.navbar a:hover{
+    cursor: pointer;
+}
+.navbar a{
+    color:#6D4C5B;
+    text-decoration:none;
+    font-size:20px;
+    margin:0 20px;
+    font-weight:bold;
+}
+
+.navbar{
+    text-align:center;
+    border-bottom:2px solid #F4C7D9;
+    padding-bottom:15px;
+    margin-bottom:30px;
+} 
+.navbar a:hover{
+    color:#B85C8A;
+}  
+            </style>
+        </head>
+        <body>
+           <h1>King Hotel</h1>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="bookingform.html">Booking</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+</div>
+<h2>Booking Form</h2>
+           <form>
+            <label>Full Name</label>
+            <br>
+            <input type="text">
+            <br><br>
+            <label>Email</label>
+            <br>
+            <input type="email">
+            <br><br>
+            <label>Phone Number</label>
+            <br>
+            <input type="tel">
+            <br><br>
+            <label>Check-in Date</label>
+            <br>
+            <input type="date">
+            <br><br>
+            <label>Number of Guests</label>
+            <br>
+
+            <select>
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5 Guests</option>
+            </select>
+
+            <br><br>
+            <input type="submit" value="Confirm Booking">
+           </form>
+           <a href="rooms.html" class="button">⬅Back to Booking</a>
+        </body>
+
+    </html>
+</DOCTYPE>
